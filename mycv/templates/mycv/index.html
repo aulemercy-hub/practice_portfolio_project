@@ -1,0 +1,360 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Siimple Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'mycv/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'mycv/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'mycv/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mycv/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'mycv/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'mycv/css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'mycv/css/custom.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">DM</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+     
+    <section id="hero" class="hero section">
+
+      <img src="{% static 'mycv/img/nw.jpg' %}" alt="my portfolio" data-aos="fade-in" class="">
+        <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h1>Hello,  Welcome</h1>
+              <p>I'm a Web Developer and I build responsive, user-friendly websites using Bootstrap, Python, and Django—focused on clean design and real-world functionality.</p>
+              <a href="#services" class="btn-get-started">View my work</a>
+            </div>
+          </div>
+        </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h3>About Us</h3>
+        <h5>Get a website that will make a lasting impression on your audience!</h5>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <img src="{% static 'mycv/img/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 content">
+            <p>
+              I’m a web developer focused on building responsive, user-friendly websites and web applications. I work primarily with Bootstrap for frontend development and Django for backend logic, creating solutions that are both visually clean and technically solid.
+            </p>
+            <h3>Technical skills</h3>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Python.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Django.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Javascript(Basics).</span></li>
+            </ul>
+            <h3>Soft skills</h3>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Problem solving.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Attention to details.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Good communication.</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+        <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h3>Services</h3>
+        <h5>What I can help you with</h5>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-layout-text-window"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Landing page development</h3>
+              </a>
+              <p>We design and build responsive, high-converting landing pages using Bootstrap, focused on clear layouts, fast loading, and a strong call to action.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-server"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Django backend development</h3>
+              </a>
+              <p>We develop secure and scalable backend functionality with Django, handling business logic, databases, and form processing for real-world web applications.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Website customization and fixes</h3>
+              </a>
+              <p>We help improve existing websites by fixing layout issues, enhancing responsiveness, and customizing features to better meet your needs.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h3>Why Us</h3>
+        <p>We understand your goal then design with clarity and build with reliability.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img">
+                <img src="{% static 'mycv/img/why-us-1.jpg' %}" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-hdd-stack"></i></div>
+              </div>
+              <h2 class="title"><a href="#" class="stretched-link">Our Mission</a></h2>
+              <p>
+                My mission is to design and develop responsive, user-friendly websites using modern web technologies, with a strong focus on clean design, performance, and real-world usability.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="img">
+                <img src="{% static 'mycv/img/why-us-2.jpg' %}" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              </div>
+              <h2 class="title"><a href="#" class="stretched-link">Our Plan</a></h2>
+              <p>
+                Understand the goal → design with clarity → build with reliability.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="img">
+                <img src="{% static 'mycv/img/why-us-3.jpg' %}" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              </div>
+              <h2 class="title"><a href="#" class="stretched-link">Our Vision</a></h2>
+              <p>
+                To create web experiences that are simple, functional, and impactful—helping individuals and businesses present themselves clearly online.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h3>Contact Us</h3>
+        <p>Always open to new opportunities and collaborations—let’s build something great.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>After Shammah estate phase 3, Welfare quarters, Makurdi</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+234 9060361470</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>aulemercy@gmail.com.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">DM</h3>
+      <p>Feel free to reach out—I’m always open to new opportunities.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">DM</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">Mercy Dooshima</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'mycv/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mycv/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'mycv/vendor/aos/aos.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'mycv/js/main.js' %}"></script>
+
+</body>
+
+</html>
